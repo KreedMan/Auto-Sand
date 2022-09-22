@@ -40,9 +40,9 @@ void walk()
     if (t % 280 == 0)
     {
         keybd_event(0x4E, 0x39, NULL, NULL);
-        Sleep(32);
+        Sleep(64);
         keybd_event(0x4E, 0x39, KEYEVENTF_KEYUP, NULL);
-        Sleep(720);
+        Sleep(1000);
         mouse_event(MOUSEEVENTF_MOVE, -108, 273, 0, 0);
         Sleep(64);
         mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
@@ -54,7 +54,7 @@ void walk()
         mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
         Sleep(64);
         mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
-        Sleep(64);
+        Sleep(128);
         keybd_event(0x10, 0x39, KEYEVENTF_KEYUP, NULL);
         Sleep(64);
         mouse_event(MOUSEEVENTF_MOVE, -35, 0, 0, 0);
