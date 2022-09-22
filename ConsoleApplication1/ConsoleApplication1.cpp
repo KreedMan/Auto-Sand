@@ -18,7 +18,7 @@ void walk()
     keybd_event(0x44, 0x39, KEYEVENTF_KEYUP, NULL);
     Sleep(64);
     keybd_event(0x57, 0x39, KEYEVENTF_KEYUP, NULL);
-    if (t % 6 == 0)
+    if (t % 4 == 0)
     {
         keybd_event(0x4B, 0x39, NULL, NULL);
         Sleep(32);
@@ -37,7 +37,7 @@ void walk()
         Sleep(32);
         keybd_event(0x1B, 0x39, KEYEVENTF_KEYUP, NULL);
     }
-    if (t % 320 == 0)
+    if (t % 280 == 0)
     {
         keybd_event(0x4E, 0x39, NULL, NULL);
         Sleep(32);
