@@ -37,7 +37,7 @@ void walk()
         Sleep(32);
         keybd_event(0x1B, 0x39, KEYEVENTF_KEYUP, NULL);
     }
-    if (t % 320)
+    if (t % 320 == 0)
     {
         keybd_event(0x4E, 0x39, NULL, NULL);
         Sleep(32);
