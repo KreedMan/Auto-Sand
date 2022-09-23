@@ -42,7 +42,7 @@ void walk()
         keybd_event(0x4E, 0x39, NULL, NULL);
         Sleep(64);
         keybd_event(0x4E, 0x39, KEYEVENTF_KEYUP, NULL);
-        Sleep(1000);
+        Sleep(1500);
         mouse_event(MOUSEEVENTF_MOVE, -108, 273, 0, 0);
         Sleep(64);
         mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
@@ -52,7 +52,7 @@ void walk()
         keybd_event(0x10, 0x39, NULL, NULL);
         Sleep(128);
         mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
-        Sleep(64);
+        Sleep(100);
         mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
         Sleep(128);
         keybd_event(0x10, 0x39, KEYEVENTF_KEYUP, NULL);
